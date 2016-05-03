@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>button-btn-btn-group</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <!--jquery和bootstrap的js-->
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <style type="text/css"></style>
+</head>
+<body>
+<h3>带图标的按钮</h3>
+<button class="btn btn-default">
+    <span class="glyphicon glyphicon-align-right" aria-hidden="true"></span>你好
+</button>
+<hr>
+<h3>alert,提示信息</h3>
+
+<div class="alert alert-danger">
+    <!--提示的图标-->
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only-focusable">提示错误信息:请输入正确的邮箱!</span>
+</div>
+<hr>
+<h3>下拉菜单dropdown</h3>
+
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+        Dropdown
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">菜单1</a></li>
+        <li><a href="#">菜单2</a></li>
+        <li class="divider"></li>
+        <li><a href="#">divider</a></li>
+    </ul>
+</div>
+<hr>
+<h3>上拉菜单</h3>
+
+<div class="dropup">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        上拉菜单 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">菜单1</a></li>
+        <li><a href="#">菜单2</a></li>
+        <li class="disabled"><a href="#">disabled</a></li>
+        <li><a href="#">菜单4</a></li>
+    </ul>
+</div>
+<hr>
+<h3>横向一排按钮,btn-group</h3>
+
+<div class="btn-group">
+    <button class="btn-default btn">
+        <span class="glyphicon glyphicon-adjust"></span>主页
+    </button>
+    <button class="btn-default btn">
+        <span class="glyphicon glyphicon-arrow-down"></span>主页1
+    </button>
+    <button class="btn-default btn">
+        <span class="glyphicon glyphicon-baby-formula"></span>主页1
+    </button>
+</div>
+<hr>
+<h3>复杂横向排列,类似分页,btn-toolbar--btn-group--btn btn-default</h3>
+
+<!--一个toolbar-->
+<div class="btn-toolbar">
+    <div class="btn-group">
+        <a class="btn btn-default" href="#">1</a>
+        <a class="btn btn-default" href="#">2</a>
+        <a class="btn btn-default" href="#">3</a>
+    </div>
+    <div class="btn-group">
+        <a class="btn btn-default" href="#">4</a>
+        <a class="btn btn-default" href="#">5</a>
+        <a class="btn btn-default" href="#">6</a>
+    </div>
+    <div class="btn-group">
+        <a class="btn btn-default" href="#">
+            <div class="glyphicon glyphicon-baby-formula">7</div>
+        </a>
+        <a class="btn btn-default" href="#">
+            <div class="glyphicon glyphicon-baby-formula">8</div>
+        </a>
+        <a class="btn btn-default" href="#">
+            <div class="glyphicon glyphicon-baby-formula">9</div>
+        </a>
+    </div>
+</div>
+<hr>
+<h3>btn-group-*,按钮组大小设定</h3>
+
+<div class="btn-group btn-group-justified">
+    <span class="btn btn-default">btn-group-justified</span>
+</div>
+<div class="btn-group btn-group-lg">
+    <span class="btn btn-default">btn-group-lg</span>
+</div>
+<div class="btn-group btn-group-xs">
+    <span class="btn btn-default">btn-group-xs</span>
+</div>
+<div class="btn-group btn-group-sm">
+    <span class="btn btn-default">btn-group-sm</span>
+</div>
+<div class="btn-group btn-group-vertical">
+    <span class="btn btn-default">btn-group-vertical</span>
+</div>
+<hr>
+<h3>嵌套btn-group,dropdown</h3>
+
+<div class="btn-group">
+    <button class="btn-default btn">btn-default</button>
+    <button class="btn-default btn">btn</button>
+    <!--点击事件样式，和点击事件的js-->
+    <div class="btn-group">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            菜单<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>菜单1</li>
+            <li>菜单2</li>
+        </ul>
+    </div>
+</div>
+<hr>
+<h3>竖向排列按钮组,btn-group-ver</h3>
+
+<div class="btn-group-vertical">
+    <button class="btn btn-default">按钮1</button>
+    <button class="btn btn-default">按钮2</button>
+    <button class="btn btn-default">按钮3</button>
+    <button class="btn btn-default">按钮4</button>
+    <button class="btn btn-default">按钮5</button>
+</div>
+<hr>
+<h3>长度充满屏幕的按钮组,btn-group-justified</h3>
+
+<div class="btn-group-justified">
+    <span class="btn btn-default">left</span>
+    <span class="btn btn-default">middle</span>
+    <span class="btn btn-default">right</span>
+</div>
+<hr>
+<h3>不同颜色的按钮组,btn-group-justified,btn btn-group alert-*,dropdown-toggle</h3>
+
+<div>
+    <div class="btn-group-justified">
+        <span class="btn btn-group alert-danger">alert-danger</span>
+        <span class="btn btn-group alert-info">alert-info</span>
+        <span class="btn btn-default alert-dismissable">alert-dismissable</span>
+        <span class="btn btn-default alert-dismissible">alert-dismissable</span>
+        <span class="btn btn-default alert-link">alert-link</span>
+        <span class="btn btn-default alert-success">alert-success</span>
+        <span class="btn btn-default alert-warning">alert-warning</span>
+
+        <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                用户组<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="bg-info">添加用户</li>
+                <li>修改用户</li>
+                <li>删除用户</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<hr>
+</body>
+</html>
