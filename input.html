@@ -51,6 +51,17 @@
         </div>
     </div>
 </div>
+<!--相对定位和绝对定位的问题-->
+<h1>以下只说id名代表div
+    绝对定位：position:absolute
+    如果bq1（绝对定位）外面没有div等父标签，bq1会以body为父标签。左边距距body 10像素，上边距距body 10像素。
+    如果bq4（绝对定位）在bq3（相对定位）里面，左边距距bq3 10像素，上边距距bq3 10像素。</h1>
+
+<div id="bq1" style=" position:absolute; left:10px; top:10px; ">bq1</div>
+<div id="bq2" style=" position:relative;">bq2</div>
+<div id="bq3" style=" position:relative;">bq3
+    <div id="bq4" style=" position:absolute; left:10px; top:10px;">bq4</div>
+</div>
 
 
 </body>
