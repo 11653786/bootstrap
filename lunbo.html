@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>布局</title>
     <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-extends-yt.css">
     <!--jquery和bootstrap的js-->
     <script src="dist/js/jquery.js"></script>
     <script src="dist/js/bootstrap.js"></script>
@@ -11,9 +12,6 @@
         * {
             margin: 0px;
             padding: 0px;
-        }
-        .active{
-            background:#ccc;
         }
     </style>
     <script type="text/javascript">
@@ -29,7 +27,9 @@
 <!-- 带下拉框的顶部导航菜单 -->
 <div class="collapse navbar-collapse navbar-inverse">
     <!--菜单在右边-->
-    <ul class="nav navbar-nav  navbar-right">
+    <div class="btn  mystyle-btn-bootstrap  btn-danger">注册</div>
+    <div class="btn  mystyle-btn-bootstrap  btn-danger">登录</div>
+    <ul class="nav navbar-nav">
         <li class="active"><a href="#">选中页面 <span class="sr-only">(current)</span></a></li>
         <li><a href="#">第二页</a></li>
         <!--带下拉框的按钮-->
@@ -50,6 +50,7 @@
             </ul>
         </li>
     </ul>
+
 </div>
 <!-- /.navbar-collapse -->
 <!--carousel,轮播图样式-->
@@ -57,12 +58,12 @@
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators,轮播图的小点 -->
     <ol class="carousel-indicators">
-        <li  data-target="#carousel-example-generic" data-slide-to="0"
+        <li data-target="#carousel-example-generic" data-slide-to="0"
             class="active"></li>
-        <li  data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li  data-target="#carousel-example-generic" data-slide-to="2"></li>
-        <li  data-target="#carousel-example-generic" data-slide-to="3"></li>
-        <li  data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->

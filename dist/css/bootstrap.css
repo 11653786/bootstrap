@@ -3258,6 +3258,7 @@ fieldset[disabled] .btn-success.active {
   background-color: #5bc0de;
   border-color: #46b8da;
 }
+
 .btn-info:focus,
 .btn-info.focus {
   color: #fff;
